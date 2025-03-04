@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pymongo
+boto3
+torch
+requests
+sentence-transformers
+pdfplumber
+python-docx
+spacy
