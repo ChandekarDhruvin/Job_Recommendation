@@ -54,7 +54,7 @@ Ensure you have the following installed:
 
 ### 📝 Step 1: Clone the Repository
 ```sh
-git clone <repository-url>
+git clone https://github.com/ChandekarDhruvin/Job_Recommendation.git
 cd job-matching-system
 ```
 
@@ -128,5 +128,6 @@ uvicorn main:app --host 0.0.0.0 --port 3000 --reload
 ---
 
 ## 👨‍💻 Contributors
-- **[Your Name]** - AI/ML Engineer
-
+- **Chandekar Dhruvin** - AI/ML Engineer
+- **Tirth Sutariya** - AI/ML Engineer
+- **Wappnet Systems Pvt Ltd**
