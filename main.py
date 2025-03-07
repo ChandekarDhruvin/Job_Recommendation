@@ -25,17 +25,12 @@ resumes_collection = DB.resumes_collection
 job_postings_collection = DB.job_collection
 matches_collection = DB.matches_collection  # Stores matches
 
-# Initialize Pinecone
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-pc = Pinecone(api_key=PINECONE_API_KEY)
 
-#  Pinecone Index Name
-INDEX_NAME = "job-posting-embeddings2"
-index = pc.Index(name=INDEX_NAME)
 
 #  Load NLP & Embedding Models
 nlp = model.nlp_resume
 embedder = model.embedder
+
 
 
 def store_resume_matches(resume_id, user_id, full_results):
@@ -94,7 +89,5 @@ def api_process_resume(resume_id: str, user_id: str, background_tasks: Backgroun
         raise HTTPException(status_code=500, detail=str(e))
 
 
-
-
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=3000)

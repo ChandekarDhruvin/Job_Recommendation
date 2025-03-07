@@ -1,3 +1,6 @@
+
+#=======================================================THIS SCRIPT WILL CREATE THE EMBEDDING OF JOB POSTS IN REAL TIME IF ANY NEW JOB FOUND================================================#
+
 from fastapi import FastAPI, HTTPException
 from pymongo import MongoClient
 from pydantic import BaseModel

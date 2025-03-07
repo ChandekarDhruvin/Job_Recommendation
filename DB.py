@@ -1,9 +1,9 @@
 import os
 
-# ✅ Initialize FastAPI
+# Initialize FastAPI
 from pymongo import MongoClient
 
-# ✅ Connect to MongoDB
+# Connect to MongoDB
 MONGO_URI = os.getenv("MONGO_URI")
 client = MongoClient(MONGO_URI)
 db = client["jobPortalDB"]
