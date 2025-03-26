@@ -19,12 +19,10 @@ import docx
 import ocr_process_resume as ocr_process_resume
 
 import pytesseract
-# os.environ["TESSDATA_PREFIX"] = r"C:\Program Files\Tesseract-OCR\tessdata"
-# Set the correct tessdata prefix
-# os.environ["TESSDATA_PREFIX"] = "/usr/share/tesseract-ocr/5/tessdata"
+
 
 # # Set the Tesseract executable path
-# pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
+
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 # Initialize FastAPI
